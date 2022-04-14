@@ -146,6 +146,8 @@ int main(int argc, char *argv[])
 
     if (ibv_post_recv(cm_id->qp, &recv_wr, &bad_recv_wr))
         return 1;
+    
+    //printf("%+" htonl((uintptr_t) buf "\n", INT64_MIN);
 
     rep_pdata.buf_va = htonl((uintptr_t) buf); 
     rep_pdata.buf_rkey = htonl(mr->rkey); 
