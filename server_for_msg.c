@@ -3,6 +3,7 @@
 #include<infiniband/arch.h>
 #include<rdma/rdma_cma.h>
 #include<string.h>
+
 enum {
 RESOLVE_TIMEOUT_MS = 5000,
 };
